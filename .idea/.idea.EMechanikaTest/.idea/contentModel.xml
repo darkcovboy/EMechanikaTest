@@ -1035,11 +1035,14 @@
         </e>
         <e p="Resources" t="Include">
           <e p="Data" t="Include">
+            <e p="BuildingData" t="Include" />
             <e p="Level" t="Include" />
             <e p="TigerData" t="Include" />
+            <e p="UI" t="Include" />
           </e>
           <e p="Prefab" t="Include">
             <e p="Buildings" t="Include" />
+            <e p="Canvas" t="Include" />
             <e p="Player" t="Include" />
           </e>
         </e>
@@ -1059,9 +1062,13 @@
             <e p="GameplaySceneInstaller.cs" t="Include" />
           </e>
           <e p="LevelLogic" t="Include">
-            <e p="ObjectCreator.cs" t="Include" />
+            <e p="GameRunner.cs" t="Include" />
             <e p="ObjectsFabric.cs" t="Include" />
             <e p="PrefabsHolder.cs" t="Include" />
+          </e>
+          <e p="Loader" t="Include">
+            <e p="LoadingCurtain.cs" t="Include" />
+            <e p="SceneLoader.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="Counter" t="Include">
@@ -1077,6 +1084,19 @@
             <e p="PointsHandler.cs" t="Include" />
             <e p="TigerMovement.cs" t="Include" />
             <e p="TigerSettings.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="AddButtons" t="Include">
+              <e p="AddBankButton.cs" t="Include" />
+              <e p="AddButchersButton.cs" t="Include" />
+              <e p="AddTigerButton.cs" t="Include" />
+              <e p="ButtonSettings.cs" t="Include" />
+            </e>
+            <e p="CounterView" t="Include">
+              <e p="MeatView.cs" t="Include" />
+              <e p="MoneyView.cs" t="Include" />
+            </e>
+            <e p="ReturnButton.cs" t="Include" />
           </e>
         </e>
         <e p="Sprites" t="Include" />

@@ -29,7 +29,7 @@ namespace Buildings
 
         public void Rotate(Transform to)
         {
-            _hitCollider.transform.Rotate(to.eulerAngles);
+            _hitCollider.transform.LookAt(to);
         }
     }
 }

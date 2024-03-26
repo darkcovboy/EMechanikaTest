@@ -7,8 +7,10 @@ namespace Player
 {
     public class PlayerTigersHolder : MonoBehaviour
     {
-        [Header("Positions")] [SerializeField] private Transform _tigerStartPosition;
-        
+        [Header("Positions")]
+        [SerializeField] private Transform _tigerStartPosition;
+
+
         private ObjectsFabric _fabric;
         private PlayerInput _playerInput;
         private List<TigerMovement> _tigers;
@@ -21,16 +23,18 @@ namespace Player
 
         private void Start()
         {
-            TigerMovement tiger = _fabric.CreateTiger(_tigerStartPosition);
+            _tigers = new List<TigerMovement>();
             _playerInput = _fabric.CreatePlayerInput();
-            _playerInput.AddTiger(tiger);
-            _tigers.Add(tiger);
+            CreateTiger();
         }
+
+        public bool IsMaxTigers(int maxTigers) => _tigers.Count == maxTigers;
 
         public void CreateTiger()
         {
-            TigerMovement tiger = _fabric.CreateTiger(_tigerStartPosition);
+            TigerMovement tiger = _fabric.CreateTiger(_tigerStartPosition.position);
             _playerInput.AddTiger(tiger);
+            _tigers.Add(tiger);
         }
     }
 }

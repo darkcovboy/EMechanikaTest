@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8624900672897661780}
   - component: {fileID: 8624900672897661783}
   - component: {fileID: 8624900672897661782}
-  - component: {fileID: -8480522401163520098}
+  - component: {fileID: 3191277709286231942}
   m_Layer: 0
-  m_Name: Butcher
+  m_Name: Bank
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b253a22e224955a4ebe8bd9f6a541675, type: 2}
+  - {fileID: 2100000, guid: d636f1d018e57ad408f02dcc35158820, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,7 +85,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &-8480522401163520098
+--- !u!114 &3191277709286231942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8624900672897661608}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 285cc49ef7324daabfc2c2cb8bdc066c, type: 3}
+  m_Script: {fileID: 11500000, guid: 17474deeccaf4164966286f91208a62f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _hitCollider: {fileID: 2989871551665345098}
@@ -142,8 +142,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 4.050794}
-  m_Center: {x: 0.00000423193, y: 0, z: 1.5253975}
+  m_Size: {x: 1, y: 1, z: 3.907648}
+  m_Center: {x: 0.00000423193, y: 0, z: 1.4538238}
 --- !u!114 &2989871551665345098
 MonoBehaviour:
   m_ObjectHideFlags: 0

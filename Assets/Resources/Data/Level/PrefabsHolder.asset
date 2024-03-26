@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tigerPrefab: {fileID: -7862256787261239977, guid: db178f685bd2cfa4b90a93c1127adda2, type: 3}
   _input: {fileID: 7514408770383038158, guid: af7161fbd13636941a961cee52980eba, type: 3}
+  _bankPrefab: {fileID: 3191277709286231942, guid: 4100e09580c197e46b22a539d9946dfe, type: 3}
+  _butcherShopPrefab: {fileID: -8480522401163520098, guid: de9de124edc4e684a92535d75c4f8b27, type: 3}

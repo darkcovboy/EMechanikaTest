@@ -1,5 +1,6 @@
 ﻿using Buildings;
 using LevelLogic;
+using Loader;
 using Player;
 using Player.Counter;
 using UnityEngine;
@@ -24,25 +25,35 @@ namespace Installers
         
         public override void InstallBindings()
         {
+            BindLoader();
             BindFabric();
             BindCounters();
             BindBuildings();
             BindTigerSettings();
         }
 
+        private void BindLoader()
+        {
+            //I don't like solutions like that but we know that everywhere SceneLoader is single, so it's okay 
+            Container.Bind<SceneLoader>().FromInstance(FindObjectOfType<SceneLoader>()).AsSingle();
+        }
+
         private void BindBuildings()
         {
+            Container.Bind<BuildingsPositionsHolder>().FromInstance(_positionsHolder).AsSingle();
             _buildingHolder.Init(_butcherShopSettings, _bankSettings);
+            Container.Bind<BuildingHolder>().FromInstance(_buildingHolder).AsSingle();
         }
 
         private void BindCounters()
         {
-            Container.BindInterfacesAndSelfTo<MeatCounter>().AsSingle().WithArguments(0);
-            Container.BindInterfacesAndSelfTo<MoneyCounter>().AsSingle().WithArguments(0);
+            Container.BindInterfacesAndSelfTo<MeatCounter>().AsSingle().WithArguments(1000);
+            Container.BindInterfacesAndSelfTo<MoneyCounter>().AsSingle().WithArguments(1000);
         }
 
         private void BindTigerSettings()
         {
+            Container.Bind<PlayerTigersHolder>().FromInstance(_playerTigersHolder).AsSingle();
             Container.Bind<TigerSettings>().FromInstance(_tigerSettings).AsSingle();
             Container.Bind<PointsHandler>().FromInstance(_pointsHandler).AsSingle();
         }

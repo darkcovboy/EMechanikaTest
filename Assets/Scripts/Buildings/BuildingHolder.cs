@@ -33,19 +33,25 @@ namespace Buildings
         {
             _butcherShops = new List<ButcherShop>();
             _banks = new List<Bank>();
-            CreateBank();
-            CreateButcherShop();
+            CreateBank(0);
+            CreateButcherShop(0);
         }
 
-        private void CreateButcherShop()
+        public bool IsBankMax(int maxBanks) => _banks.Count == maxBanks;
+        
+        public bool IsButchersMax(int maxButchersShops) => _butcherShops.Count == maxButchersShops;
+
+        public void CreateButcherShop(int positionIndex)
         {
-            ButcherShop butcherShop = _fabric.CreateButcherShop(_positions.ButchersShopPoints.First(), _butcherShopSettings);
+            ButcherShop butcherShop = _fabric.CreateButcherShop(_positions.ButchersShopPoints[positionIndex].position, _butcherShopSettings);
+            butcherShop.Rotate(transform);
             _butcherShops.Add(butcherShop);
         }
 
-        private void CreateBank()
+        public void CreateBank(int positionIndex)
         {
-            Bank bank = _fabric.CreateBank(_positions.BankPoints.First(), _bankSettings);
+            Bank bank = _fabric.CreateBank(_positions.BankPoints[positionIndex].position, _bankSettings);
+            bank.Rotate(transform);
             _banks.Add(bank);
         }
     }

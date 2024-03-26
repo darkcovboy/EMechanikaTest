@@ -7,18 +7,16 @@ namespace Buildings
     public class ButcherShop : Building
     {
         private MeatCounter _meatCounter;
-        private BuildingSettings _buildingSettings;
         
         [Inject]
-        public void Constructor(MeatCounter meatCounter, BuildingSettings buildingSettings)
+        public void Constructor(MeatCounter meatCounter)
         {
             _meatCounter = meatCounter;
-            _buildingSettings = buildingSettings;
         }
         
         protected override void EarnCurrency()
         {
-            _meatCounter.Add(_buildingSettings.Currency);
+            _meatCounter.Add(BuildingSettings.Currency);
             PlayAnimation();
         }
 

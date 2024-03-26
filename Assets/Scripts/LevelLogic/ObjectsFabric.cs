@@ -17,24 +17,25 @@ namespace LevelLogic
             _prefabs = prefabs;
         }
 
-        public TigerMovement CreateTiger(Transform at)
+        public TigerMovement CreateTiger(Vector3 at)
         {
-            var tiger = _diContainer.InstantiatePrefabForComponent<TigerMovement>(_prefabs.TigerPrefab, at);
+            var tiger = _diContainer.InstantiatePrefabForComponent<TigerMovement>(_prefabs.TigerPrefab, at, Quaternion.identity, null);
             return tiger;
         }
 
         public PlayerInput CreatePlayerInput() => _diContainer.InstantiatePrefabForComponent<PlayerInput>(_prefabs.PlayerInput);
 
-        public Bank CreateBank(Transform at, BuildingSettings buildingSettings)
+        public Bank CreateBank(Vector3 at, BuildingSettings buildingSettings)
         {
-            Bank bank = _diContainer.InstantiatePrefabForComponent<Bank>(at);
+            Bank bank = _diContainer.InstantiatePrefabForComponent<Bank>(_prefabs.BankPrefab, at, Quaternion.identity,
+                null);
             bank.Init(buildingSettings);
             return bank;
         }
         
-        public ButcherShop CreateButcherShop(Transform at, BuildingSettings buildingSettings)
+        public ButcherShop CreateButcherShop(Vector3 at, BuildingSettings buildingSettings)
         {
-            ButcherShop butcherShop = _diContainer.InstantiatePrefabForComponent<ButcherShop>(at);
+            ButcherShop butcherShop = _diContainer.InstantiatePrefabForComponent<ButcherShop>(_prefabs.ButcherShopPrefab,at, Quaternion.identity, null);
             butcherShop.Init(buildingSettings);
             return butcherShop;
         }
