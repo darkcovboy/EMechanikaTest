@@ -8,6 +8,7 @@
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Fonts" t="Include" />
         <e p="Materials" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
@@ -1058,8 +1059,10 @@
             <e p="ButcherShop.cs" t="Include" />
             <e p="HitCollider.cs" t="Include" />
           </e>
+          <e p="DataExtension.cs" t="Include" />
           <e p="Installers" t="Include">
             <e p="GameplaySceneInstaller.cs" t="Include" />
+            <e p="MainSceneInstaller.cs" t="Include" />
           </e>
           <e p="LevelLogic" t="Include">
             <e p="GameRunner.cs" t="Include" />
@@ -1069,6 +1072,11 @@
           <e p="Loader" t="Include">
             <e p="LoadingCurtain.cs" t="Include" />
             <e p="SceneLoader.cs" t="Include" />
+          </e>
+          <e p="PersistentData" t="Include">
+            <e p="Progress.cs" t="Include" />
+            <e p="ProgressData.cs" t="Include" />
+            <e p="ProgressSaver.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
             <e p="Counter" t="Include">
@@ -1091,15 +1099,27 @@
               <e p="AddButchersButton.cs" t="Include" />
               <e p="AddTigerButton.cs" t="Include" />
               <e p="ButtonSettings.cs" t="Include" />
+              <e p="ButtonsHolder.cs" t="Include" />
             </e>
+            <e p="ClickDisappearObject.cs" t="Include" />
             <e p="CounterView" t="Include">
               <e p="MeatView.cs" t="Include" />
               <e p="MoneyView.cs" t="Include" />
             </e>
+            <e p="MainScene" t="Include">
+              <e p="ContinueButton.cs" t="Include" />
+              <e p="InfoShower.cs" t="Include" />
+              <e p="Menu.cs" t="Include" />
+              <e p="PlayButton.cs" t="Include" />
+              <e p="SettingsOpenButton.cs" t="Include" />
+              <e p="SettingsScreen.cs" t="Include" />
+            </e>
             <e p="ReturnButton.cs" t="Include" />
           </e>
         </e>
-        <e p="Sprites" t="Include" />
+        <e p="Sprites" t="Include">
+          <e p="Characters" t="Include" />
+        </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Documentation" t="Include" />
           <e p="Fonts" t="Include">

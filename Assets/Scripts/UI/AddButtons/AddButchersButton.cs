@@ -1,4 +1,5 @@
 ﻿using Buildings;
+using PersistentData;
 using Player.Counter;
 using TMPro;
 using UnityEngine;
@@ -15,13 +16,14 @@ namespace UI.AddButtons
         
         private MoneyCounter _moneyCounter;
         private BuildingHolder _buildingHolder;
-        private int _currentLevel = 0;
+        private int _currentLevel;
 
         [Inject]
-        private void Constructor(MoneyCounter moneyCounter, BuildingHolder buildingHolder)
+        private void Constructor(MoneyCounter moneyCounter, BuildingHolder buildingHolder, Progress progress)
         {
             _moneyCounter = moneyCounter;
             _buildingHolder = buildingHolder;
+            _currentLevel = progress.ProgressData.CountButchers;
         }
 
         private void OnEnable()
@@ -45,7 +47,7 @@ namespace UI.AddButtons
             _moneyCounter.TakeCurrency(_buttonSettings.Prices[_currentLevel]);
             _currentLevel++;
             _buildingHolder.CreateButcherShop(_currentLevel);
-            if(!_buildingHolder.IsButchersMax(_buttonSettings.Prices.Count + 1))
+            if(_currentLevel != _buttonSettings.Prices.Count)
                 UpdateText();
         }
 

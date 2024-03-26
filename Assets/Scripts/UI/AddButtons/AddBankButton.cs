@@ -1,4 +1,5 @@
 ﻿using Buildings;
+using PersistentData;
 using Player;
 using Player.Counter;
 using TMPro;
@@ -16,13 +17,14 @@ namespace UI.AddButtons
         
         private MeatCounter _meatCounter;
         private BuildingHolder _buildingHolder;
-        private int _currentLevel = 0;
+        private int _currentLevel;
 
         [Inject]
-        private void Constructor(MeatCounter meatCounter, BuildingHolder buildingHolder)
+        private void Constructor(MeatCounter meatCounter, BuildingHolder buildingHolder, Progress progress)
         {
             _meatCounter = meatCounter;
             _buildingHolder = buildingHolder;
+            _currentLevel = progress.ProgressData.CountBanks;
         }
 
         private void OnEnable()
@@ -46,7 +48,7 @@ namespace UI.AddButtons
             _meatCounter.TakeCurrency(_buttonSettings.Prices[_currentLevel]);
             _currentLevel++;
             _buildingHolder.CreateBank(_currentLevel);
-            if(!_buildingHolder.IsBankMax(_buttonSettings.Prices.Count + 1))
+            if(_currentLevel != _buttonSettings.Prices.Count)
                 UpdateText();
         }
 

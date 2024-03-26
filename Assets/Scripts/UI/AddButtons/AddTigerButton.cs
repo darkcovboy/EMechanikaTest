@@ -1,4 +1,5 @@
 ﻿using System;
+using PersistentData;
 using Player;
 using Player.Counter;
 using TMPro;
@@ -16,13 +17,14 @@ namespace UI.AddButtons
         
         private MoneyCounter _moneyCounter;
         private PlayerTigersHolder _playerTigersHolder;
-        private int _currentLevel = 0;
+        private int _currentLevel;
 
         [Inject]
-        private void Constructor(MoneyCounter moneyCounter, PlayerTigersHolder playerTigersHolder)
+        private void Constructor(MoneyCounter moneyCounter, PlayerTigersHolder playerTigersHolder, Progress progress)
         {
             _moneyCounter = moneyCounter;
             _playerTigersHolder = playerTigersHolder;
+            _currentLevel = progress.ProgressData.CountTigers;
         }
 
         private void OnEnable()
@@ -46,7 +48,7 @@ namespace UI.AddButtons
             _moneyCounter.TakeCurrency(_buttonSettings.Prices[_currentLevel]);
             _currentLevel++;
             _playerTigersHolder.CreateTiger();
-            if(!_playerTigersHolder.IsMaxTigers(_buttonSettings.Prices.Count + 1))
+            if(_currentLevel != _buttonSettings.Prices.Count)
                 UpdateText();
         }
 

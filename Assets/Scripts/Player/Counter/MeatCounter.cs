@@ -1,15 +1,20 @@
 ﻿using System;
+using PersistentData;
+using Zenject;
 
 namespace Player.Counter
 {
-    public class MeatCounter : ICounter, IMeatChangeHandler
+    public class MeatCounter : ICounter, IMeatChangeHandler, IInitializable
     {
         public event Action<int> OnMeatChangeValue;
         private int Meat { get; set; }
 
-        public MeatCounter(int startValue)
+        private readonly Progress _progress;
+
+        public MeatCounter(Progress progress)
         {
-            Meat = startValue;
+            _progress = progress;
+            Meat = _progress.ProgressData.MeatCollected;
         }
         
         public void Add(int currency)
@@ -18,6 +23,7 @@ namespace Player.Counter
                 throw new ArgumentException(nameof(currency));
 
             Meat += currency;
+            _progress.ProgressData.MeatCollected = Meat;
             OnMeatChangeValue?.Invoke(Meat);
         }
 
@@ -27,9 +33,14 @@ namespace Player.Counter
                 throw new ArgumentException(nameof(currency));
 
             Meat -= currency;
+            _progress.ProgressData.MeatCollected = Meat;
             OnMeatChangeValue?.Invoke(Meat);
         }
 
         public bool IsEnough(int currency) => currency <= Meat;
+        public void Initialize()
+        {
+            OnMeatChangeValue?.Invoke(Meat);
+        }
     }
 }

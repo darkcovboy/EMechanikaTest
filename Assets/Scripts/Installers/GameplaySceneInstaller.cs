@@ -1,6 +1,7 @@
 ﻿using Buildings;
 using LevelLogic;
 using Loader;
+using PersistentData;
 using Player;
 using Player.Counter;
 using UnityEngine;
@@ -25,11 +26,17 @@ namespace Installers
         
         public override void InstallBindings()
         {
+            BindProgress();
             BindLoader();
             BindFabric();
             BindCounters();
             BindBuildings();
             BindTigerSettings();
+        }
+        
+        private void BindProgress()
+        {
+            Container.Bind<Progress>().AsSingle();
         }
 
         private void BindLoader()
@@ -47,8 +54,8 @@ namespace Installers
 
         private void BindCounters()
         {
-            Container.BindInterfacesAndSelfTo<MeatCounter>().AsSingle().WithArguments(1000);
-            Container.BindInterfacesAndSelfTo<MoneyCounter>().AsSingle().WithArguments(1000);
+            Container.BindInterfacesAndSelfTo<MeatCounter>().AsSingle();
+            Container.BindInterfacesAndSelfTo<MoneyCounter>().AsSingle();
         }
 
         private void BindTigerSettings()

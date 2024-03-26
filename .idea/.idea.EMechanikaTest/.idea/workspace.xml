@@ -20,45 +20,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7655b3a5-b429-4cd3-bc1b-17c042d02f9a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelLogic/GameRunner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/LevelLogic/GameRunner.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Loader.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Loader/LoadingCurtain.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Loader/LoadingCurtain.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Loader/SceneLoader.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Loader/SceneLoader.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddBankButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddBankButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddButchersButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddButchersButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddTigerButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddTigerButton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/ButtonSettings.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/ButtonSettings.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CounterView.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CounterView/MeatView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CounterView/MeatView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CounterView/MoneyView.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/CounterView/MoneyView.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ReturnButton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ReturnButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DataExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DataExtension.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/MainSceneInstaller.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/MainSceneInstaller.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PersistentData.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PersistentData/Progress.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PersistentData/Progress.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PersistentData/ProgressData.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PersistentData/ProgressData.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PersistentData/ProgressSaver.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PersistentData/ProgressSaver.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/ButtonsHolder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/ButtonsHolder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ClickDisappearObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ClickDisappearObject.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/ContinueButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/ContinueButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/InfoShower.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/InfoShower.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/Menu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/Menu.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/PlayButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/PlayButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/SettingsOpenButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/SettingsOpenButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/SettingsScreen.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/SettingsScreen.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EMechanikaTest/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EMechanikaTest/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EMechanikaTest/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EMechanikaTest/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EMechanikaTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EMechanikaTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Data/Level/PrefabsHolder.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Data/Level/PrefabsHolder.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Buildings/Butcher.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Buildings/Butcher.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Player/Tiger.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Player/Tiger.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Prefab/Canvas/HUD.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Prefab/Canvas/HUD.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Initial.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Initial.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/Building.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/BuildingHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/BuildingHolder.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Buildings/ButcherShop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Buildings/ButcherShop.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Installers/GameplaySceneInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Installers/GameplaySceneInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelLogic/ObjectCreator.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelLogic/ObjectCreator.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelLogic/ObjectsFabric.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelLogic/ObjectsFabric.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Counter/MeatCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Counter/MeatCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Counter/MoneyCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Counter/MoneyCounter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTigersHolder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTigersHolder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddBankButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddBankButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddButchersButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddButchersButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddTigerButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddTigerButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UI/ReturnButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UI/ReturnButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/asdasd.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/asdasd.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/background_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/background_2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,13 +81,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PersistentData/Progress.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Counter/ICounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Counter/IMeatChangeHandler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Counter/MeatCounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Counter/MoneyCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Buildings/BuildingSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelLogic/PrefabsHolder.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/TigersHolder.cs" />
@@ -86,16 +100,37 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/CounterView/MoneyView.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/ButtonSettings.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Buildings/Bank.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTigersHolder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddTigerButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Buildings/BuildingHolder.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddBankButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddButchersButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Loader/LoadingCurtain.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Loader/SceneLoader.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameplaySceneInstaller.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelLogic/GameRunner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ContinueButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/ContinueButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/PlayButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerProgress/Progress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PersistentData/LevelData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PersistentData/ProgressData.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DataExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/MainSceneInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddBankButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddButchersButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddTigerButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/asdasd.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Counter/MeatCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/Counter/MoneyCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Installers/GameplaySceneInstaller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/Menu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Buildings/BuildingHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player/PlayerTigersHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PersistentData/Progress.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/ButtonsHolder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ClickDissapearObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ClickDisapзearObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/ClickDisappearObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/SettingsScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/SettingsOpenButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PersistentData/ProgressSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ReturnButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/InfoShower.cs" />
       </list>
     </option>
   </component>
@@ -141,7 +176,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711448151463</updated>
-      <workItem from="1711448175671" duration="8035000" />
+      <workItem from="1711448175671" duration="14058000" />
     </task>
     <servers />
   </component>
@@ -165,9 +200,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="794" y="221" key="RiderGenerateDialog" timestamp="1711448331076">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2714" y="221" key="RiderGenerateDialog" timestamp="1711462377794">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="2714" y="221" key="RiderGenerateDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1711462377794" />
     <state x="794" y="221" key="RiderGenerateDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1711448331076" />
   </component>
 </project>
