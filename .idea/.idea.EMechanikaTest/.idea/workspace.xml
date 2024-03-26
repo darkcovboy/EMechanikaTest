@@ -111,9 +111,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PersistentData/ProgressData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DataExtension.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Installers/MainSceneInstaller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddBankButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddButchersButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddTigerButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/asdasd.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Counter/MeatCounter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player/Counter/MoneyCounter.cs" />
@@ -131,6 +128,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PersistentData/ProgressSaver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/ReturnButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/MainScene/InfoShower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddButchersButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddBankButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UI/AddButtons/AddTigerButton.cs" />
       </list>
     </option>
   </component>
@@ -176,7 +176,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711448151463</updated>
-      <workItem from="1711448175671" duration="14058000" />
+      <workItem from="1711448175671" duration="14897000" />
     </task>
     <servers />
   </component>
