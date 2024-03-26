@@ -6,7 +6,7 @@ SpriteAtlas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Icons
+  m_Name: Backgrounds
   m_EditorData:
     serializedVersion: 2
     textureSettings:
@@ -23,7 +23,7 @@ SpriteAtlas:
     platformSettings:
     - serializedVersion: 3
       m_BuildTarget: DefaultTexturePlatform
-      m_MaxTextureSize: 2048
+      m_MaxTextureSize: 8192
       m_ResizeAlgorithm: 0
       m_TextureFormat: -1
       m_TextureCompression: 1
@@ -44,35 +44,33 @@ SpriteAtlas:
     secondaryTextureSettings: {}
     variantMultiplier: 1
     packables:
-    - {fileID: 102900000, guid: c49a81705bfb8094cab47ebef678c7b4, type: 3}
+    - {fileID: 102900000, guid: 419d755c9c570f74ba6bfb80a4a6814a, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 84e3c1a026392574d8e9aec69d0ece34, type: 3}
-  - {fileID: 21300000, guid: d24ec1411978d754ebd2034baf66c991, type: 3}
-  - {fileID: 21300000, guid: 3f0cd9b6371c55b43bd348906672b5db, type: 3}
-  - {fileID: 21300000, guid: 1aface9794b0a6e43946cc6af3f4b018, type: 3}
-  - {fileID: 21300000, guid: 0aa516b8e42594b47b3efbbc9303c2c6, type: 3}
-  - {fileID: 21300000, guid: 5ab6ed09776baef4e91fe2cdbb89ffcb, type: 3}
-  - {fileID: 21300000, guid: 06d0f43c03e94f44b8a3d915f14613c1, type: 3}
-  - {fileID: 21300000, guid: b3d1f58cd47844c49a70782066f18042, type: 3}
-  - {fileID: 21300000, guid: 91f3cdfd4d04ace44980ec9bbc0714c1, type: 3}
-  - {fileID: 21300000, guid: 9146fa8fcdd856441964104377463d43, type: 3}
-  - {fileID: 21300000, guid: 93f88ebfd1460064489a8f1665c7ea78, type: 3}
+  - {fileID: 21300000, guid: 1a0ceca0b7460bc48a608cda6f88bb14, type: 3}
+  - {fileID: 21300000, guid: 7c03bf613e59d6840a4ac7515107c8ff, type: 3}
+  - {fileID: 21300000, guid: 697d1cf240bc52d428263697b0e9f941, type: 3}
+  - {fileID: 21300000, guid: 421d0f28666316b418c10dd04432ebfd, type: 3}
+  - {fileID: 21300000, guid: 72d6d0093dac39345b04e3c3f82a8419, type: 3}
+  - {fileID: 21300000, guid: d21e02bcb0bf4164bb1e0b1154f4e4ef, type: 3}
+  - {fileID: 21300000, guid: 54312ffd340ad8b4f958a4686847a4ee, type: 3}
+  - {fileID: 21300000, guid: 14be627eef3402b41b4e7c4b1bf06418, type: 3}
+  - {fileID: 21300000, guid: 80b765eebdb76db4e91d7b0c79789efa, type: 3}
+  - {fileID: 21300000, guid: fd8ffc4f8eb564643bffd3bc70836384, type: 3}
   m_PackedSpriteNamesToIndex:
-  - LeadersIcon
-  - SoundMusicOff
-  - PlayIcon
-  - SoundMusicOn
-  - SettingsIcon
-  - Gift
-  - meat
-  - GiftText
-  - ReturnIcon
-  - coin
-  - CrossIcon
+  - ToggleOffBackground
+  - play_button_background
+  - AddBackgroundGrey
+  - backgroundText
+  - SettingsBackground
+  - AddBackgroundBlue
+  - background_2
+  - add_background
+  - ButtonReturn
+  - CloseButtonBackground
   m_RenderDataMap: {}
-  m_Tag: Icons
+  m_Tag: Backgrounds
   m_IsVariant: 0
