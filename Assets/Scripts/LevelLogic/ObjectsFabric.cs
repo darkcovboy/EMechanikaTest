@@ -1,4 +1,5 @@
-﻿using Installers;
+﻿using Buildings;
+using Installers;
 using Player;
 using UnityEngine;
 using Zenject;
@@ -23,5 +24,19 @@ namespace LevelLogic
         }
 
         public PlayerInput CreatePlayerInput() => _diContainer.InstantiatePrefabForComponent<PlayerInput>(_prefabs.PlayerInput);
+
+        public Bank CreateBank(Transform at, BuildingSettings buildingSettings)
+        {
+            Bank bank = _diContainer.InstantiatePrefabForComponent<Bank>(at);
+            bank.Init(buildingSettings);
+            return bank;
+        }
+        
+        public ButcherShop CreateButcherShop(Transform at, BuildingSettings buildingSettings)
+        {
+            ButcherShop butcherShop = _diContainer.InstantiatePrefabForComponent<ButcherShop>(at);
+            butcherShop.Init(buildingSettings);
+            return butcherShop;
+        }
     }
 }

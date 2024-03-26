@@ -7,6 +7,13 @@ namespace Buildings
     {
         [SerializeField] private HitCollider _hitCollider;
 
+        protected BuildingSettings BuildingSettings;
+
+        public void Init(BuildingSettings buildingSettings)
+        {
+            BuildingSettings = buildingSettings;
+        }
+
         private void OnEnable()
         {
             _hitCollider.OnTrigger += EarnCurrency;
@@ -22,7 +29,7 @@ namespace Buildings
 
         public void Rotate(Transform to)
         {
-            transform.Rotate(to.eulerAngles);
+            _hitCollider.transform.Rotate(to.eulerAngles);
         }
     }
 }

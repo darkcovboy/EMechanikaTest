@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using Buildings;
+using Player;
 using UnityEngine;
 
 namespace LevelLogic
@@ -8,8 +9,14 @@ namespace LevelLogic
     {
         [SerializeField] private TigerMovement _tigerPrefab;
         [SerializeField] private PlayerInput _input;
+        [SerializeField] private Bank _bankPrefab;
+        [SerializeField] private ButcherShop _butcherShopPrefab;
 
         public TigerMovement TigerPrefab => _tigerPrefab;
         public PlayerInput PlayerInput => _input;
+
+        public ButcherShop ButcherShopPrefab => _butcherShopPrefab;
+
+        public Bank BankPrefab => _bankPrefab;
     }
 }
